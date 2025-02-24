@@ -36,6 +36,10 @@ app.register(fastifySwaggerUi, {
 app.register(subscribeToEventRoute)
 app.register(accessInviteLinkRoute)
 
-app.listen({ port: env.PORT }).then(() => {
-  console.log('Server is running on port 3333')
-})
+app
+  .listen({ port: env.PORT })
+  .then(() => console.log(`Server is running on port ${env.PORT}`))
+  .catch(err => {
+    console.error('Error starting server', err)
+    process.exit(1)
+  })
