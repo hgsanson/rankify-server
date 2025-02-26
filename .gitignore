@@ -4,4 +4,5 @@ node_modules
 
 biome.json
 api.http
+client.http
 dist
