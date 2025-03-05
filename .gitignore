@@ -6,3 +6,5 @@ biome.json
 api.http
 client.http
 dist
+
+integration

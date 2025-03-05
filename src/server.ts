@@ -25,7 +25,7 @@ app.register(fastifyCors)
 app.register(fastifySwagger, {
   openapi: {
     info: {
-      title: 'Rankinfy',
+      title: 'Rankify',
       version: '0.1',
     },
   },
